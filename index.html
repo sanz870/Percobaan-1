@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Undangan Pernikahan | Raka & Ayu</title>
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- MUSIC -->
+    <audio id="bg-music" loop>
+        <source src="musik.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- BUTTON MUSIC -->
+    <button id="music-btn">
+        🎵 Putar Musik
+    </button>
+
+    <!-- SCRIPT MUSIC -->
+    <script>
+
+        window.addEventListener("DOMContentLoaded", function () {
+
+            const music = document.getElementById("bg-music");
+            const button = document.getElementById("music-btn");
+
+            button.addEventListener("click", function () {
+
+                if (music.paused) {
+
+                    music.play();
+
+                    button.innerHTML = "🎶 Musik ON";
+
+                } else {
+
+                    music.pause();
+
+                    button.innerHTML = "🎵 Putar Musik";
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="floating flower1"></div>
+        <div class="floating flower2"></div>
+        <div class="floating flower3"></div>
+
+        <div class="hero-content">
+
+            <p class="opening-text">
+                The Wedding Of
+            </p>
+
+            <h1>
+                Nama Kamu <span>&</span> Nama Kamu
+            </h1>
+
+            <p class="date">
+                Minggu, 28 Desember 2026
+            </p>
+
+            <a href="#mempelai" class="btn-open">
+                Buka Undangan
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote">
+
+        <div class="quote-box">
+
+            <h2>Bismillahirrahmanirrahim</h2>
+
+            <p>
+                “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang di antara kamu.”
+            </p>
+
+            <span>QS. Ar-Rum : 21</span>
+
+        </div>
+
+    </section>
+
+    <!-- MEMPELAI -->
+    <section class="mempelai" id="mempelai">
+
+        <h2>Mempelai</h2>
+
+        <div class="mempelai-wrapper">
+
+            <!-- PRIA -->
+            <div class="card-mempelai">
+
+                <div class="photo">
+                    <img src="foto-pria.jpg" alt="">
+                </div>
+
+                <h3>Nama Kamu</h3>
+
+                <p>
+                    Putra Pertama Dari
+                    <br>
+                    Bapak & Ibu
+                </p>
+
+            </div>
+
+            <!-- LOVE -->
+            <div class="love-icon">
+                ❤
+            </div>
+
+            <!-- WANITA -->
+            <div class="card-mempelai">
+
+                <div class="photo">
+                    <img src="foto-wanita.jpg" alt="">
+                </div>
+
+                <h3>Nama Kamu</h3>
+
+                <p>
+                    Putri Pertama Dari
+                    <br>
+                    Bapak & Ibu
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown">
+
+        <h2>Menuju Hari Bahagia</h2>
+
+        <div class="countdown-box">
+
+            <div class="time">
+                <h3 id="days">00</h3>
+                <p>Hari</p>
+            </div>
+
+            <div class="time">
+                <h3 id="hours">00</h3>
+                <p>Jam</p>
+            </div>
+
+            <div class="time">
+                <h3 id="minutes">00</h3>
+                <p>Menit</p>
+            </div>
+
+            <div class="time">
+                <h3 id="seconds">00</h3>
+                <p>Detik</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ACARA -->
+    <section class="event">
+
+        <h2>Detail Acara</h2>
+
+        <div class="event-wrapper">
+
+            <!-- AKAD -->
+            <div class="event-card">
+
+                <h3>Akad Nikah</h3>
+
+                <p class="event-date">
+                    Minggu, 28 Desember 2026
+                </p>
+
+                <p class="event-time">
+                    08.00 WIB - Selesai
+                </p>
+
+                <p class="event-address">
+                    Gedung Serbaguna Mawar
+                    <br>
+                    Jl. Merdeka No. 123
+                    <br>
+                    Indonesia
+                </p>
+
+            </div>
+
+            <!-- RESEPSI -->
+            <div class="event-card">
+
+                <h3>Resepsi Pernikahan</h3>
+
+                <p class="event-date">
+                    Minggu, 28 Desember 2026
+                </p>
+
+                <p class="event-time">
+                    10.00 WIB - 17.00 WIB
+                </p>
+
+                <p class="event-address">
+                    Ballroom Grand Hotel
+                    <br>
+                    Jl. Jenderal Sudirman No. 88
+                    <br>
+                    Indonesia
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERI -->
+    <section class="gallery">
+
+        <h2>Galeri Cinta</h2>
+
+        <div class="gallery-wrapper">
+
+            <div class="gallery-item">
+                <img src="1.jpg" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="2.jpg" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="3.jpg" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="4.jpg" alt="">
+            </div>
+
+            <div class="gallery-item">
+                <img src="5.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LOVE STORY -->
+    <section class="story">
+
+        <h2>Love Story</h2>
+
+        <div class="story-line">
+
+            <div class="story-item">
+                <span>2022</span>
+                <h3>Pertama Bertemu</h3>
+
+                <p>
+                    Awal pertemuan sederhana yang membawa kisah cinta luar biasa.
+                </p>
+            </div>
+
+            <div class="story-item">
+                <span>2024</span>
+                <h3>Menjalin Hubungan</h3>
+
+                <p>
+                    Hari demi hari dipenuhi kebahagiaan dan perjuangan bersama.
+                </p>
+            </div>
+
+            <div class="story-item">
+                <span>2026</span>
+                <h3>Menuju Pernikahan</h3>
+
+                <p>
+                    Dengan restu keluarga dan cinta yang tulus kami melangkah ke jenjang pernikahan.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- RSVP -->
+    <section class="rsvp">
+
+        <h2>Konfirmasi Kehadiran</h2>
+
+        <form>
+
+            <input type="text" placeholder="Nama Anda">
+
+            <select>
+                <option>Konfirmasi Kehadiran</option>
+                <option>Hadir</option>
+                <option>Tidak Hadir</option>
+            </select>
+
+            <textarea placeholder="Ucapan dan Doa"></textarea>
+
+            <button type="submit">
+                Kirim Ucapan
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- PENUTUP -->
+    <section class="closing">
+
+        <div class="closing-content">
+
+            <h2>Terima Kasih</h2>
+
+            <p>
+                Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.
+            </p>
+
+            <h3>
+                Nama Pria & Nama Wanita
+            </h3>
+
+        </div>
+
+    </section>
+
+    <!-- ORNAMEN -->
+    <div class="petals"></div>
+
+</body>
+</html>
+```
